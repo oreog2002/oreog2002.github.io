@@ -8,54 +8,27 @@ tags: [Python, Numpy, Planets]
 #### This project is about using Python and Numpy to calculate the volumes of all the planets in our solar system:
 ---
 
-Firstly, I love Python so much, here is some code!
-
-```
-my_love_for_python = 0
-my_python_knowledge = 0
-
-for day in lifetime:
-    my_love_for_python += 1
-    my_python_knowledge += 1
-```
-
-Just so you really see how much I love Python, here is some code BUT with some colours for keywords & functionality!
+Add the library, Numpy, since that's going to be our biggest tool for calculating the planets' volumes.
 
 ```python
-my_love_for_python = 0
-my_python_knowledge = 0
-
-for day in lifetime:
-    my_love_for_python += 1
-    my_python_knowledge += 1  
+import numpy as np
 ```
 
-Here is an **unordered list** showing some things I love about Python
+Create a variable that'll contain the radii of all the solar system's planets from Mercury to Neptune.
 
-* For my work
-    * Data Analysis
-    * Data Visualisation
-    * Machine Learning
-* For fun
-    * Deep Learning
-    * Computer Vision
-    * Projects about coffee
+```python
+radii = np.array([2439.7, 6051.8, 6371, 3389.7, 69911, 58232, 25362, 24622]) 
+```
 
-Here is an _ordered list_ showing some things I love about coffee
+Now, we'll calculate the volumes of the planets, with "np.pi" as our pi and our "radii" variable as our radii. Then, we'll show the resulting volumes using the "print" command.
 
-1. The smell
-    1. Especially in the morning, but also at all times of the day!
-2. The taste
-3. The fact I can run the 100m in approx. 9 seconds after having 4 cups in quick succession
+```python
+volumes = 4/3 * np.pi * radii**3
+print(volumes)
+```
 
-I love Python & Coffee so much, here is that picture from the top of my project AGAIN, but this time, in the BODY of my project!
 
-![alt text](/img/posts/coffee_python.jpg "Coffee & Python - I love them!")
-
-The above image is just linked to the actual file in my Github, but I could also link to images online, using the URL!
-
-A line break, like this one below - helps me make sense of what I'm reading, especially when I've had so much coffee that my vision goes a little blurry
 
 ---
 
-I could also add things to my project like links, tables, quotes, and HTML blocks - but I'm starting to get a cracking headache.  Must be coffee time.
+And there are the planets' volumes!
