@@ -5,7 +5,7 @@ image: "/posts/Calculating_Planet_Volumes.jpg"
 tags: [Python, Numpy, Planets]
 ---
 
-#### This project is about using Python and Numpy to calculate the volumes of all the planets in our solar system:
+### This project is about using Python and Numpy to calculate the volumes of all the planets in our solar system:
 ---
 
 Add the library, Numpy, since that's going to be our biggest tool for calculating the planets' volumes.
@@ -27,8 +27,21 @@ volumes = 4/3 * np.pi * radii**3
 print(volumes)
 ```
 
-
+And there are the planets' volumes!
 
 ---
 
-And there are the planets' volumes!
+### What if we wanted the hypothetical volumes of a million random planets, though...?
+
+---
+
+Letting the radii hypothetically be any one million random integers, ranging from 1 to 1000, we get:
+
+```python
+radii = np.random.randint(1, 1000, 1000000)
+volumes = 4/3 * np.pi * radii**3
+print(volumes)
+```
+
+And just like that, we've hypothetically found the volumes of a million planets!
+
