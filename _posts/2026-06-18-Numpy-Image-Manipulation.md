@@ -28,6 +28,8 @@ plt.imshow(camaro)
 plt.show()
 ```
 
+![alt](/img/posts/camaro.jpg "Camaro")
+
 Now, we'll crop the image. By slicing the array along the y-axis and x-axis, we can trim the picture down to just get the car itself, and then save the resulting image.
 
 ```python
