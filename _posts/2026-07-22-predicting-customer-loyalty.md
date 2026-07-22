@@ -155,10 +155,9 @@ After this data pre-processing in Python, we have a dataset for modelling that c
 | transaction_count | Independent | Total unique transactions made by the customer in ABC Grocery within the latest 6 months |
 | product_area_count | Independent | The number of product areas within ABC Grocery the customers has shopped into within the latest 6 months |
 | average_basket_value | Independent | The average spend per transaction for the customer in ABC Grocery within the latest 6 months |
-<br>
-<br>
-___
 
+___
+<br>
 # Modelling Overview <a name="linreg-title"></a>
 
 We will build a model that looks to accurately predict the “loyalty_score” metric for those customers that were able to be tagged, based upon the customer metrics listed above.
