@@ -156,12 +156,10 @@ After the data pre-processing using Pandas, we have a dataset for clustering tha
 The data is at customer level, and we have a column for each of the highest level food product areas.  Within each of those we have the *percentage* of sales that each customer allocated to that product area over the past six months.
 
 ___
-<br>
 
 <a name="kmeans-title"></a>
 # K-Means 
 
-<br>
 
 <a name="kmeans-overview"></a>
 ### Concept Overview 
@@ -183,7 +181,6 @@ The algorithm does this by iterating over four key steps, namely:
 
 Steps 3 & 4 continue to iterate until no data-points are reassigned to a closer centroid.
 
-<br>
 
 <a name="kmeans-preprocessing"></a>
 ### Data Preprocessing 
