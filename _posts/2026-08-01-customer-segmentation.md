@@ -21,7 +21,7 @@ In this project we use k-means clustering to segment up the customer base in ord
     - [Finding A Good Value For K](#kmeans-k-value)
     - [Model Fitting](#kmeans-model-fitting)
     - [Appending Clusters To Customers](#kmeans-append-clusters)
-    - [Segment Profiling](#kmeans-cluster-profiling)
+    - [Cluster Profiling](#kmeans-cluster-profiling)
 - [03. Application](#kmeans-application)
 - [04. Growth & Next Steps](#growth-next-steps)
 
