@@ -27,9 +27,11 @@ In this project we use k-means clustering to segment up the customer base in ord
 
 ___
 
-# Project Overview  <a name="overview-main"></a>
+<a name="overview-main"></a>
+# Project Overview  
 
-### Context <a name="overview-context"></a>
+<a name="overview-context"></a>
+### Context 
 
 The Senior Management team from our client, a supermarket chain, are disagreeing about how customers are shopping, and how lifestyle choices may affect which food areas customers are shopping into, or more interestingly, not shopping into.
 
@@ -37,7 +39,9 @@ They have asked us to use data, and Machine Learning to help segment up their cu
 
 <br>
 <br>
-### Actions <a name="overview-actions"></a>
+
+<a name="overview-actions"></a>
+### Actions 
 
 We firstly needed to compile the necessary data from several tables in the database, namely the *transactions* table and the *product_areas* table.  We joined together the relevant information using Pandas, and then aggregated the transactional data across product areas, from the most recent six month to a customer level.  The final data for clustering is, for each customer, the percentage of sales allocated to each product area.
 
@@ -49,7 +53,8 @@ Based upon this, we apply the k-means algorithm onto the product area data, appe
 <br>
 <br>
 
-### Results <a name="overview-results"></a>
+<a name="overview-results"></a>
+### Results 
 
 Based upon iterative testing using WCSS we settled on a customer segmentation with 3 clusters.  These clusters ranged in size, with Cluster 0 accounting for 73.6% of the customer base, Cluster 2 accounting for 14.6%, and Cluster 1 accounting for 11.8%.
 
@@ -65,7 +70,9 @@ To help embed this segmentation into the business, we have proposed to call this
 
 <br>
 <br>
-### Growth/Next Steps <a name="overview-growth"></a>
+
+<a name="overview-growth"></a>
+### Growth/Next Steps 
 
 It would be interesting to run this clustering/segmentation at a lower level of product areas, so rather than just the four areas of Meat, Dairy, Fruit, Vegetables - clustering spend across the sub-categories *below* those categories.  This would mean we could create more specific clusters, and get an even more granular understanding of dietary preferences within the customer base.
 
@@ -77,7 +84,8 @@ It would be useful to test other clustering approaches such as hierarchical clus
 
 ___
 
-# Data Overview  <a name="data-overview"></a>
+<a name="data-overview"></a>
+# Data Overview  
 
 We are primarily looking to discover segments of customers based upon their transactions within *food* based product areas so we will need to only select those.
 
@@ -149,10 +157,14 @@ The data is at customer level, and we have a column for each of the highest leve
 
 ___
 <br>
-# K-Means <a name="kmeans-title"></a>
+
+<a name="kmeans-title"></a>
+# K-Means 
 
 <br>
-### Concept Overview <a name="kmeans-overview"></a>
+
+<a name="kmeans-overview"></a>
+### Concept Overview 
 
 K-Means is an *unsupervised learning* algorithm, meaning that it does not look to predict known labels or values, but instead looks to isolate patterns within unlabelled data.
 
@@ -172,7 +184,9 @@ The algorithm does this by iterating over four key steps, namely:
 Steps 3 & 4 continue to iterate until no data-points are reassigned to a closer centroid.
 
 <br>
-### Data Preprocessing <a name="kmeans-preprocessing"></a>
+
+<a name="kmeans-preprocessing"></a>
+### Data Preprocessing 
 
 There are three vital preprocessing steps for k-means, namely:
 
@@ -224,7 +238,9 @@ data_for_clustering_scaled = pd.DataFrame(scale_norm.fit_transform(data_for_clus
 ```
 
 <br>
-### Finding A Good Value For k <a name="kmeans-k-value"></a>
+
+<a name="kmeans-k-value"></a>
+### Finding A Good Value For k 
 
 At this point here, our data is ready to be fed into the k-means clustering algorithm.  Before that however, we want to understand what number of clusters we want the data split into.
 
@@ -269,7 +285,9 @@ That code gives us the below plot - which visualises our results!
 Based upon the shape of the above plot - there does appear to be an elbow at k = 3.  Prior to that we see a significant drop in the WCSS score, but following the decreases are much smaller, meaning this could be a point that suggests adding *more clusters* will provide little extra benefit in terms of separating our data.  A small number of clusters can be beneficial when considering how easy it is for the business to focus on, and understand, each - so we will continue on, and fit our k-means clustering solution with k = 3.
 
 <br>
-### Model Fitting <a name="kmeans-model-fitting"></a>
+
+<a name="kmeans-model-fitting"></a>
+### Model Fitting 
 
 The below code will instantiate our k-means object using a value for k equal to 3.  We then fit this object to our scaled dataset to separate our data into three distinct segments or clusters.
 
@@ -284,7 +302,9 @@ kmeans.fit(data_for_clustering_scaled)
 ```
 
 <br>
-### Append Clusters To Customers <a name="kmeans-append-clusters"></a>
+
+<a name="kmeans-append-clusters"></a>
+### Append Clusters To Customers 
 
 With the k-means algorithm fitted to our data, we can now append those clusters to our original dataset, meaning that each customer will be tagged with the cluster number that they most closely fit into based upon their sales data over each product area.
 
@@ -298,7 +318,9 @@ data_for_clustering["cluster"] = kmeans.labels_
 ```
 
 <br>
-### Cluster Profiling <a name="kmeans-cluster-profiling"></a>
+
+<a name="kmeans-cluster-profiling"></a>
+### Cluster Profiling 
 
 Once we have our data separated into distinct clusters, our client needs to understand *what is is* that is driving the separation.  This means the business can understand the customers within each, and the behaviours that make them unique.
 
@@ -350,7 +372,9 @@ For *Cluster 0* we see a reasonably significant portion of spend being allocated
 
 ___
 <br>
-# Application <a name="kmeans-application"></a>
+
+<a name="kmeans-application"></a>
+# Application 
 
 Even though this is a simple solution, based upon high level product areas it will help leaders in the business, and category managers gain a clearer understanding of the customer base.
 
@@ -360,7 +384,9 @@ Based upon these clusters, the client will be able to target customers more accu
 
 ___
 <br>
-# Growth & Next Steps <a name="growth-next-steps"></a>
+
+<a name="growth-next-steps"></a>
+# Growth & Next Steps 
 
 It would be interesting to run this clustering/segmentation at a lower level of product areas, so rather than just the four areas of Meat, Dairy, Fruit, Vegetables - clustering spend across the sub-categories *below* those categories.  This would mean we could create more specific clusters, and get an even more granular understanding of dietary preferences within the customer base.
 
