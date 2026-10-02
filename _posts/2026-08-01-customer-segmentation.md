@@ -25,7 +25,7 @@ In this project we use k-means clustering to segment up the customer base in ord
 - [03. Application](#kmeans-application)
 - [04. Growth & Next Steps](#growth-next-steps)
 
-___
+---
 
 <a name="overview-main"></a>
 # Project Overview  
@@ -82,7 +82,7 @@ It would be useful to test other clustering approaches such as hierarchical clus
 <br>
 <br>
 
-___
+---
 
 <a name="data-overview"></a>
 # Data Overview  
@@ -158,7 +158,6 @@ The data is at customer level, and we have a column for each of the highest leve
 ---
 
 # K-Means 
-
 
 ### Concept Overview 
 
