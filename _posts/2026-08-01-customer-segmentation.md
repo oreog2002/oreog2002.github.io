@@ -155,7 +155,7 @@ After the data pre-processing using Pandas, we have a dataset for clustering tha
 <br>
 The data is at customer level, and we have a column for each of the highest level food product areas.  Within each of those we have the *percentage* of sales that each customer allocated to that product area over the past six months.
 
-___
+---
 
 # K-Means 
 
