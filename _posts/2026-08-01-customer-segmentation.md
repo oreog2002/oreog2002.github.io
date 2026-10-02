@@ -15,9 +15,9 @@ In this project we use k-means clustering to segment up the customer base in ord
     - [Results](#overview-results)
     - [Growth/Next Steps](#overview-growth)
 - [01. Data Overview](#data-overview)
-- [02. K-Means](#kmeans-title)
-    - [Concept Overview](#kmeans-overview)
-    - [Data Preprocessing](#kmeans-preprocessing)
+- [02. K-Means](#k-means)
+    - [Concept Overview](#concept-overview)
+    - [Data Preprocessing](#data-preprocessing)
     - [Finding A Good Value For K](#kmeans-k-value)
     - [Model Fitting](#kmeans-model-fitting)
     - [Appending Clusters To Customers](#kmeans-append-clusters)
@@ -157,11 +157,9 @@ The data is at customer level, and we have a column for each of the highest leve
 
 ___
 
-<a name="kmeans-title"></a>
 # K-Means 
 
 
-<a name="kmeans-overview"></a>
 ### Concept Overview 
 
 K-Means is an *unsupervised learning* algorithm, meaning that it does not look to predict known labels or values, but instead looks to isolate patterns within unlabelled data.
@@ -182,8 +180,9 @@ The algorithm does this by iterating over four key steps, namely:
 Steps 3 & 4 continue to iterate until no data-points are reassigned to a closer centroid.
 
 
-<a name="kmeans-preprocessing"></a>
-### Data Preprocessing 
+### Data Preprocessing
+
+
 
 There are three vital preprocessing steps for k-means, namely:
 
