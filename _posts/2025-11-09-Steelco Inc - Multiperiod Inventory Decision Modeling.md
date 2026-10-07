@@ -484,7 +484,7 @@ its business implications.
 
 ### Recommendations and Conclusion <a name="recommendations-conclusions"></a>
 
-[Recommendations]{.underline}
+**Recommendations**
 
 Based on the validated results of the linear programming model, we make
 two primary recommendations—one tactical and one strategic.
@@ -512,7 +512,7 @@ two primary recommendations—one tactical and one strategic.
     monthly limits will result in a direct and significant increase in
     total profit.
 
-[Conclusion]{.underline}
+**Conclusion**
 
 This analysis successfully modeled Steelco's complex 2025
 production-planning problem as a deterministic linear program. The
@@ -527,7 +527,7 @@ calculated backordering. By implementing the provided schedule and
 addressing the identified raw material bottleneck, Steelco Inc. can
 confidently exceed its financial projections for 2025.
 
-[Future Collaboration]{.underline}
+**Future Collaboration**
 
 The true value of this project is not just the 2025 schedule, but the
 creation of a reusable and expandable optimization framework. This model
