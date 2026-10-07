@@ -196,8 +196,8 @@ validity of the solution:
 
 3.  **Proportionality:** The resource usage is directly proportional to
     the activity level. For example, producing one ton of Beam I
-    requires a fixed amount of new and recycled steel, and producing $x$
-    tons requires exactly $x$ times those amounts.
+    requires a fixed amount of new and recycled steel, and producing `x`
+    tons requires exactly `x` times those amounts.
 
 4.  **Additivity:** The total value of the objective function (profit)
     and the total resource consumption are the sum of their individual
@@ -283,24 +283,24 @@ over a 12-month horizon.
     where applicable.
 
     - **Material Purchase Limit:** This constraint ensures that the
-      amount of material $j$ bought in any month $t$ does not exceed its
-      monthly purchase limit $PL_j$. See Figure 7:
+        amount of material `j` bought in any month `t` does not exceed its
+      monthly purchase limit `PL_j`. See Figure 7:
       ![alt text](/img/posts/Figure-7.png "Figure 7")
 
       (*Figure 7*)
 
     - **Material Usage:** This constraint links purchasing to
       production. It states that the total steel produced (summed across
-      all products $i$) using material $j$ cannot be more than the
-      usable amount (Yield $Y_j$ $\times$ amount bought) of material $j$
+      all products `i`) using material `j` cannot be more than the
+      usable amount (Yield `Y_j` x amount bought) of material `j`
       purchased that month. See Figure 8: ![alt text](/img/posts/Figure-8.png "Figure 8")
 
       (*Figure 8*)
 
     - **Quality Requirement:** This constraint enforces the minimum
-      quality standard. It says the amount of product $i$ made from
+      quality standard. It says the amount of product `i` made from
       'New' steel must be greater than or equal to the required
-      percentage $QR_i$ of the total amount of product $i$ produced
+      percentage `QR_i` of the total amount of product `i` produced
       (from both 'New' and 'Recycled' steel). See Figure 9:
 
       ![alt text](/img/posts/Figure-9.png "Figure 9")
@@ -309,8 +309,8 @@ over a 12-month horizon.
 
     - Inventory Balance: This is the core "flow" constraint that
       connects all months. It states that the "net inventory" (what you
-      have minus what you owe) at the end of this month $t$ must equal
-      the net inventory from last month $t-1$, plus what you produced
+      have minus what you owe) at the end of this month `t` must equal
+      the net inventory from last month `t-1`, plus what you produced
       this month, minus what customers demanded this month. See Figure
       10:
 
@@ -320,7 +320,7 @@ over a 12-month horizon.
 
     - **Boundary Conditions:**
 
-      1.  **Initial** $t=0$**:** $inv_{i,0} = 0$ and $back_{i,0} = 0$.
+      1.  **Initial** `t=0`**:** `inv_{i,0} = 0` and `back_{i,0} = 0`.
 
           - This constraint sets the starting point, ensuring the
             company begins the year with zero inventory and no
@@ -330,8 +330,8 @@ over a 12-month horizon.
 
             (*Figure 11*)
 
-      2.  **Final** $(t = 12)$**:** $inv_{i,12} = 0$ and
-          $back_{i,12} = 0$.
+      2.  **Final** `(t = 12)`**:** `inv_{i,12} = 0` and
+          `back_{i,12} = 0`.
 
           - This constraint ensures the company ends the year "clean"
             with no leftover inventory or backorders, as specified in
@@ -380,8 +380,8 @@ over a 12-month horizon.
       1.  The remainder of the script consists of nested for loops
           designed to print tables.
 
-      2.  The outer loops iterate through time $t$. The inner loops
-          iterate through products $i$ or materials $j$.
+      2.  The outer loops iterate through time `t`. The inner loops
+          iterate through products `i` or materials `j`.
 
       3.  `write()` is used to print data on the same line (separated by
           a tab `\t`), while `writeln()` is used to move to the next
@@ -391,10 +391,14 @@ over a 12-month horizon.
           production, inventory, and backorders that are presented in
           the results section.
 
-      5.  See Figure 15-16: ![alt text](/img/posts/Figure-15.png "Figure 15")
-         (*Figure 15*)
+      5.  See Figure 15-16:
+         
+          ![alt text](/img/posts/Figure-15.png "Figure 15")
+
+          (*Figure 15*)
 
           ![alt text](/img/posts/Figure-16.png "Figure 16")
+          
           (*Figure 16*)
 
 <br> <br>
@@ -447,7 +451,7 @@ its business implications.
           21) and pay the \$100/ton penalty. It does this because the
               limited materials available in Month 1 are more profitably
               used to produce other beams (like U, H, and L). It
-              is"smarter" to pay the I-Beam penalty and use the scarce
+              is "smarter" to pay the I-Beam penalty and use the scarce
               resources on higher-margin products.
       2.  **Strategic Pre-Building (e.g., U-Beams):** In Month 2, the
           model produces 3,200 tons of U-Beams when demand is only 2,400
@@ -476,12 +480,19 @@ its business implications.
       execute block:
 
       ![alt text](/img/posts/Figure-18.png "Figure 18")
+      
       (*Figure 18*)
+      
       ![alt text](/img/posts/Figure-19.png "Figure 19")
+      
       (*Figure 19*)
+      
       ![alt text](/img/posts/Figure-20.png "Figure 20")
+      
       (*Figure 20*)
+      
       ![alt text](/img/posts/Figure-21.png "Figure 21")
+      
       (*Figure 21*)
 
 <br> <br>
