@@ -23,7 +23,7 @@ avatar_image: /img/Oreoulwa_Ogunleye_profile_pic.jpg
 #-------------------------------
 # Contact links
 linkedln: "https://www.linkedin.com/in/oreoluwa-ogunleye/#" # Add your linkedln handle
-github: "https://github.com/oreog2002/#"  # Add your github handle
+github: "https://github.com/oreog2002/oreog2002.github.io/tree/master/#"  # Add your github handle
 
 paginate: 6
 paginate_path: "/page/:num"
