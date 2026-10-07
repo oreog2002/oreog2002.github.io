@@ -391,9 +391,11 @@ over a 12-month horizon.
           production, inventory, and backorders that are presented in
           the results section.
 
-      5.  See Figure 15-16: ![alt text](/img/posts/Figure-15.png "Figure 15") (*Figure 15*)
+      5.  See Figure 15-16: ![alt text](/img/posts/Figure-15.png "Figure 15")
+         (*Figure 15*)
 
-          ![alt text](/img/posts/Figure-16.png "Figure 16")(*Figure 16*)
+          ![alt text](/img/posts/Figure-16.png "Figure 16")
+          (*Figure 16*)
 
 <br> <br>
 
@@ -474,11 +476,13 @@ its business implications.
       execute block:
 
       ![alt text](/img/posts/Figure-18.png "Figure 18")
-
-      (*Figure 18*) ![alt text](/img/posts/Figure-19.png "Figure 19") (*Figure 19*)
-      ![alt text](/img/posts/Figure-20.png "Figure 20")(*Figure 20*)
-
-      ![alt text](/img/posts/Figure-21.png "Figure 21") (*Figure 21*)
+      (*Figure 18*)
+      ![alt text](/img/posts/Figure-19.png "Figure 19")
+      (*Figure 19*)
+      ![alt text](/img/posts/Figure-20.png "Figure 20")
+      (*Figure 20*)
+      ![alt text](/img/posts/Figure-21.png "Figure 21")
+      (*Figure 21*)
 
 <br> <br>
 
